@@ -8,17 +8,17 @@
     <title>Document</title>
 </head>
 
-<body class="bg-stone-950 text-stone-400">
+<body class="bg-stone-950 text-stone-200">
 
-    <header class="mx-auto max-w-screen-lg">
-        <nav class="bg-red-500 flex justify-between px-8 py-4">
-            <div>Book Wise</div>
-            <ul>
-                <li><a href="/">Explorar</a></li>
-                <li><a href="/meus-livros">Meus Livros</a></li>
+    <header class="bg-stone-900">
+        <nav class="mx-auto max-w-screen-lg flex justify-between px-8 py-4">
+            <div class="font-bold text-xl tracking-wide">Book Wise</div>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="text-lime-400">Explorar</a></li>
+                <li><a href="/meus-livros.php" class="hover:underline">Meus Livros</a></li>
             </ul>
             <ul>
-                <li><a href="/login">Fazer Login</a></li>
+                <li><a href="/login.php">Fazer Login</a></li>
             </ul>
         </nav>
     </header>
