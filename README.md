@@ -19,7 +19,7 @@ Sistema de gerenciamento de livros desenvolvido com PHP e Tailwind CSS.
 1. Clone o repositório:
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/jonathan-matheus/bookwise
 cd bookwise
 ```
 
