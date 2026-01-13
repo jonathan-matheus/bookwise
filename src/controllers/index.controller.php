@@ -1,6 +1,5 @@
 <?php
-require_once './dados.php';
+require 'dados.php';
 
-$view = 'index';
-require_once "views/templete/app.php";
+view('index', ['livros' => $livros]);
 ?>

@@ -4,6 +4,6 @@ $id = $_GET['id'];
 $livro = array_filter($livros, fn($livro) => $livro['id'] == $id);
 $livro = array_pop($livro);
 
-$view = 'livro';
-require_once "views/templete/app.php";
-?>
+
+view('livro', ['livro' => $livro]);
+
