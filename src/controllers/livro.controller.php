@@ -1,8 +1,7 @@
 <?php
-require_once './dados.php';
 $id = $_GET['id'];
-$livro = array_filter($livros, fn($livro) => $livro['id'] == $id);
-$livro = array_pop($livro);
+
+$db = new DB;
+$livro = $db->livros($id)[0];
 
 view('livro', ['livro' => $livro]);
-

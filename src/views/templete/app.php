@@ -12,7 +12,7 @@
 
     <header class="bg-stone-900 mb-4">
         <nav class="mx-auto max-w-screen-lg flex justify-between py-4">
-            <div class="font-bold text-xl tracking-wide">Book Wise</div>
+            <div class="font-bold text-xl tracking-wide"><a href="/">Book Wise</a></div>
             <ul class="flex space-x-4">
                 <li><a href="/" class="text-lime-400">Explorar</a></li>
                 <li><a href="/meus-livros" class="hover:underline">Meus Livros</a></li>
