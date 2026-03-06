@@ -2,6 +2,6 @@
 $id = $_GET['id'];
 
 $db = new DB;
-$livro = $db->livros($id)[0];
+$livro = $db->livro($id);
 
 view('livro', ['livro' => $livro]);

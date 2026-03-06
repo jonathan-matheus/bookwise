@@ -1,5 +1,5 @@
 <form class="w-full space-x-2">
-    <input type="text" class="border-stone-800 border-2 rounded-md bg-stone-900 text-sm px-2 py-1"
+    <input type="text" name="pesquisar" class="border-stone-800 border-2 rounded-md bg-stone-900 text-sm px-2 py-1"
         placeholder="Buscar livro" name="pesquisar">
     <button type="submit">🔎</button>
 </form>
