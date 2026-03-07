@@ -1,7 +1,4 @@
 <?php
-$id = $_GET['id'];
-
-$db = new DB;
-$livro = $db->livro($id);
+$livro = (new DB())->livro($_GET['id']);
 
 view('livro', ['livro' => $livro]);

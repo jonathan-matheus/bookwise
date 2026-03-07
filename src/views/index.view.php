@@ -1,6 +1,15 @@
+<?php
+$pesquisa = $_GET['pesquisar'] ?? '';
+if ($pesquisa) {
+    $placeholder = "$pesquisa";
+} else {
+    $placeholder = "Buscar livro";
+}
+?>
+
 <form class="w-full space-x-2">
     <input type="text" name="pesquisar" class="border-stone-800 border-2 rounded-md bg-stone-900 text-sm px-2 py-1"
-        placeholder="Buscar livro" name="pesquisar">
+        placeholder="<?= $placeholder ?>" name="pesquisar">
     <button type="submit">🔎</button>
 </form>
 
