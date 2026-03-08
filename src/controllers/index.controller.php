@@ -3,9 +3,7 @@ $pesquisar = $_REQUEST['pesquisar'] ?? '';
 
 $db = new DB;
 
-$livro = $db->query("select * from livros")->fetchAll();
-
-$livros = (new DB)->livros($pesquisar);
+$livros = $db->query("select * from livros where titulo like :pesquisar", Livro::class, ['pesquisar' => "%$pesquisar%"])->fetchAll();
 
 view('index', ['livros' => $livros]);
 ?>
