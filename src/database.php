@@ -7,7 +7,7 @@ class DB
     {
         $connectionString = $config['driver'] . ':' . $config['database'];
 
-        $this->db = new PDO($connectionString);
+        $this->db = new PDO('mysql:host=mysql;port=3306;dbname=bookwise;user=user;charset=utf8mb4', 'user', 'password');
     }
 
     public function query($query, $class = null, $params = [])

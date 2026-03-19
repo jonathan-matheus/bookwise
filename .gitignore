@@ -24,3 +24,4 @@ Thumbs.db
 
 # DB
 database.sqlite
+mysql-data/
