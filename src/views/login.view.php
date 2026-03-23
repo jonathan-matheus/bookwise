@@ -25,11 +25,24 @@
 
     <div class="border-stone-700 border rounded p-4">
         <h1 class="border-b border-stone-700 px-4 py-2">Registro</h1>
-        <?php if ($mensagem): ?>
+        <?php if (!empty($mensagem)): ?>
             <div class="bg-green-600 text-white p-2 rounded mb-4 mt-4">
                 <?= htmlspecialchars($mensagem) ?>
             </div>
         <?php endif; ?>
+
+        <?php if (!empty($_SESSION['validacoes'])): ?>
+            <div class="bg-red-600 text-red-400 px-4 py-1 text-sm font-bold rounded mb-4 mt-4">
+                <ul class="list-disc list-inside">
+                    <?php foreach ($_SESSION['validacoes'] as $validacao): ?>
+                        <li>
+                            <?= htmlspecialchars($validacao) ?>
+                        </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+        <?php endif; ?>
+
         <form class="p-4 space-y-4" method="post" action="/registrar">
             <div class="flex flex-col">
                 <label class="text-stone-400 mb-1">Nome</label>
